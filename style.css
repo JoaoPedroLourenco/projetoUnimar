@@ -1,0 +1,182 @@
+:root{
+    --montserrat: 'Montserrat', sans-serif;
+    --inter: 'Inter', sans-serif;
+    --lalezar: 'Lalezar', cursive;
+    --azul-unimar: #0072BC;
+    --azul-escuro: #055183;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+}
+
+.header{
+    width: 100vw;
+    height: 6vh;
+    background: #0072BC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    font-family: var(--inter);
+}
+
+.logo img{
+    width: 170px;
+}
+
+.search-navbar input{
+    width: 250px;
+    height: 40px;
+    background-image: url(imgs/🦆\ icon\ _search_.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    background-size: 30px;
+    padding-left: 2.5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--inter);
+}
+
+.search-navbar input:focus{
+    outline: 2px solid var(--azul-escuro);
+    box-shadow: 0px 5px 10px var(--azul-escuro);
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--azul-escuro);
+    gap: .3em;
+    border: none;
+    background-image: url(imgs/user\ 5.png);
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-position-x: 10px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    margin-right: -20px;
+    font-size: 18px;
+}
+
+#landing-page{
+    height: 100vh;
+}
+
+#landing-page .container-landing-page{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.container-landing-page .lado-esq{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.lado-esq .content-esq{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+}
+
+.textos{
+    display: flex;
+    flex-direction: column;
+    gap: .7em;
+}
+
+.textos p{
+    font-size: 1.5em;
+    font-family: var(--inter);
+}
+
+.textos h1{
+    font-size: 7em;
+    line-height: 100px;
+    font-family: var(--lalezar);
+    color: var(--azul-unimar);
+}
+
+.container-landing-page .lado-dir{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-landingpage input{
+    width: 400px;
+    height: 50px;
+    background-image: url(imgs/🦆\ icon\ _search_.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    background-size: 30px;
+    padding-left: 2.5em;
+    border-radius: 10px;
+    border: 2px solid var(--azul-unimar);
+    outline: none;
+    font-size: 1em;
+    font-family: var(--inter);
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.buttons button{
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+    background: var(--azul-unimar);
+    border: none;
+    transition: .2s;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    box-shadow: 0px 10px 15px -3px #0551834b;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: var(--inter);
+}
+
+.lado-dir img{
+    width: 60%;
+    margin-right: 150px;
+}
