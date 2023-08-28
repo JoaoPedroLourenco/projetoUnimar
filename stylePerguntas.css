@@ -92,6 +92,21 @@ body{
     height: 100vh;
 }
 
+.container .title{
+    padding-top: 120px;
+    display: flex;
+    align-items: center;
+    margin-left: 180px;
+    margin-bottom: -50px;
+}
+
+.title h1{
+    font-size: 5em;
+    font-family: var(--lalezar);
+    color: #0072BC;
+    letter-spacing: 2px;
+}
+
 .container .cards{
     width: 100%;
     height: 100%;
@@ -163,7 +178,7 @@ body{
     height: 10%;
     display: flex;
     align-items: center;
-    gap: .5em;
+    gap: .6em;
     position: relative;
     bottom: -30%;
     margin: 20px;
@@ -181,6 +196,7 @@ body{
 .lower-bar p{
     display: flex;
     align-items: center;
+    gap: .5em;
 }
 
 .lower-bar button{
@@ -202,12 +218,13 @@ body{
 }
 
 .lower-bar button:hover{
-    box-shadow: -5px 5px 0px var(--azul-escuro);
+    box-shadow: -3px 3px 0px var(--azul-escuro);
 }
 
 #circulo-baixo{
     position: absolute;
-    top: 100%;
+    top: 110%;
+    z-index: -99999;
 }
 #circulo-cima{
     position: absolute;
