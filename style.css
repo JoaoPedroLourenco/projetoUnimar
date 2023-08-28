@@ -13,6 +13,7 @@
 
 body{
     height: 100vh;
+    background: #EDEDED;
 }
 
 .header{
@@ -30,27 +31,7 @@ body{
     width: 170px;
 }
 
-.search-navbar input{
-    width: 250px;
-    height: 40px;
-    background-image: url(imgs/🦆\ icon\ _search_.png);
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 5px;
-    background-size: 30px;
-    padding-left: 2.5em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    font-family: var(--inter);
-}
 
-.search-navbar input:focus{
-    outline: 2px solid var(--azul-escuro);
-    box-shadow: 0px 5px 10px var(--azul-escuro);
-    
-}
 
 .btn{
     display: flex;
@@ -66,7 +47,7 @@ body{
     background: var(--azul-escuro);
     gap: .3em;
     border: none;
-    background-image: url(imgs/user\ 5.png);
+    background-image: url(imgs/user.png);
     background-repeat: no-repeat;
     background-position-y: 10px;
     background-position-x: 10px;
@@ -83,6 +64,10 @@ body{
 
 #landing-page{
     height: 100vh;
+    background-image: url(imgs/onda-landing-page.png);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-position: bottom;
 }
 
 #landing-page .container-landing-page{
@@ -107,13 +92,15 @@ body{
     gap: 1.5em;
 }
 
-.textos{
+.content-esq .textos{
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: .7em;
 }
 
 .textos p{
+    width: 100%;
     font-size: 1.5em;
     font-family: var(--inter);
 }
@@ -123,6 +110,7 @@ body{
     line-height: 100px;
     font-family: var(--lalezar);
     color: var(--azul-unimar);
+    text-shadow: -5px 5px 0px var(--azul-escuro);
 }
 
 .container-landing-page .lado-dir{
@@ -136,7 +124,7 @@ body{
 .search-landingpage input{
     width: 400px;
     height: 50px;
-    background-image: url(imgs/🦆\ icon\ _search_.png);
+    background-image: url(imgs/search.png);
     background-repeat: no-repeat;
     background-position-x: 5px;
     background-position-y: 10px;
@@ -161,12 +149,12 @@ body{
     border-radius: 10px;
     background: var(--azul-unimar);
     border: none;
-    transition: .2s;
+    transition: .3s;
     cursor: pointer;
 }
 
 .buttons button:hover{
-    box-shadow: 0px 10px 15px -3px #0551834b;
+    box-shadow: -5px 7px 0px var(--azul-escuro);
 }
 
 .buttons a{
@@ -177,6 +165,6 @@ body{
 }
 
 .lado-dir img{
-    width: 60%;
-    margin-right: 150px;
+    width: 650px;
+    z-index: 9999;
 }
