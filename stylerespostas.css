@@ -25,6 +25,7 @@ body{
     align-items: center;
     position: fixed;
     font-family: var(--inter);
+    
 }
 
 .logo img{
@@ -122,7 +123,7 @@ section .container{
 
 .resposta{
     width: 500px;
-    height: 500px;
+    height: 600px;
     background: #FFFFFF;
     border: 2px solid var(--azul-unimar);
     align-self: flex-start;
@@ -144,11 +145,11 @@ section .container{
 }
 
 .btn-pergunta{
-    margin-top: -80%;
+    margin-top: -75%; 
 }
 
 .btn-pergunta button{
-    width: 220px;
+    width: 400px;
     height: 70px;
     border: none;
     background: var(--azul-unimar);
@@ -162,8 +163,8 @@ section .container{
     
 }
 
-.btn-pergunta button:hover{
-    box-shadow: -5px 5px 0px var(--azul-escuro);
+button:hover{
+    box-shadow: 0px 5px 0px var(--azul-escuro);
 }
 
 .lado-dir .temas{
@@ -188,6 +189,12 @@ section .container{
     align-items: center;
     justify-content: center;
     margin-bottom: 16px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.card:hover{
+    box-shadow: 0px 5px 0px var(--azul-unimar);
 }
 
 .card .card-content {
@@ -202,17 +209,101 @@ section .container{
  .scroll{
     position: relative;
     left: 2%;
-    width: 320px;
+    width: 330px;
     height: 400px;
     overflow: scroll;
     overflow-x: hidden;
-    margin-top: 70px;
+    margin-top: 10px;
+}
+
+#procurar-temas{
+    font-size: 2em;
+    font-weight: 300;
 }
 
 .temas p{
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-family: var(--inter);
     font-weight: 700;
     margin-bottom: 20px;
     margin-top: -10px;
+}
+
+.pergunta .content-pergunta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-pergunta .perfil{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin: 20px;
+    gap: .6em;
+    font-weight: 700;
+    font-family: var(--inter);
+}
+
+.content-pergunta .question{
+    width: 100%;
+    height: 90%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 55px;
+    gap: .6em;
+}
+
+.question h3{
+    font-family: var(--lalezar);
+    font-weight: 200;
+    font-size: 25px;
+}
+
+.question p{
+    font-size: 18px;
+    font-family: var(--inter);
+}
+
+.resposta .content-resposta{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.content-resposta .submit-resp{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    gap: 1em;
+    margin: 5%;
+}
+
+.submit-resp textarea{
+    width: 300px;
+    height: 30px;
+    resize: none;
+    border: 2px solid var(--azul-unimar);
+    border-radius: 10px;
+    font-size: 18px;
+    font-family: var(--inter);
+    line-height: 30px;
+    padding: 10px;
+    outline: none;
+}
+
+.submit-resp button{
+    width: 120px;
+    height: 55px;
+    border: none;
+    border-radius: 10px;
+    background: var(--azul-unimar);
+    color: white;
+    font-family: var(--inter);
+    font-size: 18px;
+    transition: .3s;
+    cursor: pointer;
 }
