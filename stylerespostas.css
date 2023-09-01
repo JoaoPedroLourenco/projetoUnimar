@@ -16,73 +16,6 @@ body{
     overflow-x: hidden;
 }
 
-.header{
-    width: 100vw;
-    height: 8vh;
-    background: #0072BC;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    font-family: var(--inter);
-    
-}
-
-.logo img{
-    width: 170px;
-}
-
-.search-navbar input{
-    width: 250px;
-    height: 40px;
-    background-image: url(imgs/search.png);
-    background-repeat: no-repeat;
-    background-position-x: 5px;
-    background-position-y: 5px;
-    background-size: 30px;
-    padding-left: 2.5em;
-    border-radius: 10px;
-    border: none;
-    outline: none;
-    font-size: 1em;
-    font-family: var(--inter);
-}
-
-.search-navbar input:focus{
-    outline: 2px solid var(--azul-escuro);
-    box-shadow: 0px 5px 10px var(--azul-escuro);
-    
-}
-
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.btn button{
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
-    background: var(--azul-escuro);
-    gap: .3em;
-    border: none;
-    background-image: url(imgs/user.png);
-    background-repeat: no-repeat;
-    background-position-y: 10px;
-    background-position-x: 10px;
-    background-size: 20px;
-    cursor: pointer;
-}
-
-.btn a{
-    text-decoration: none;
-    color: white;
-    margin-right: -20px;
-    font-size: 18px;
-}
-
 section{
     width: 100vw;
     height: 120vh;
@@ -123,7 +56,7 @@ section .container{
 
 .resposta{
     width: 500px;
-    height: 600px;
+    height: 700px;
     background: #FFFFFF;
     border: 2px solid var(--azul-unimar);
     align-self: flex-start;
@@ -272,6 +205,67 @@ button:hover{
     width: 100%;
     height: 100%;
     display: flex;
+    flex-direction: column;
+}
+
+.content-resposta .resposta-pessoas{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+}
+
+.resposta-pessoas p{
+    font-family: var(--inter);
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 900;
+    color: var(--azul-unimar);
+}
+
+.resposta-pessoas .rspt{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.resposta-pessoas .perfil-resposta{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+    gap: .6em;
+    font-weight: 700;
+    font-family: var(--inter);
+}
+
+.perfil-resposta h1{
+    font-size: 18px;
+    color: black;
+    font-weight: 900;
+}
+
+.perfil-resposta img{
+    width: 30px;
+    height: 30px;
+}
+
+.rspt .texto-resposta{
+    width: 90%;
+    height: 50%;
+    margin-left: 35px;
+}
+
+.texto-resposta p{
+    font-size: 20px;
+    max-width: 90%;
+    margin-left: 20px;
+    color: black;
+    font-weight: 100;
 }
 
 .content-resposta .submit-resp{

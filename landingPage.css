@@ -14,52 +14,7 @@
 body{
     height: 100vh;
     background: #EDEDED;
-}
-
-.header{
-    width: 100vw;
-    height: 6vh;
-    background: #0072BC;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: fixed;
-    font-family: var(--inter);
-}
-
-.logo img{
-    width: 170px;
-}
-
-
-
-.btn{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 20px;
-}
-
-.btn button{
-    width: 90px;
-    height: 40px;
-    border-radius: 10px;
-    background: var(--azul-escuro);
-    gap: .3em;
-    border: none;
-    background-image: url(imgs/user.png);
-    background-repeat: no-repeat;
-    background-position-y: 10px;
-    background-position-x: 10px;
-    background-size: 20px;
-    cursor: pointer;
-}
-
-.btn a{
-    text-decoration: none;
-    color: white;
-    margin-right: -20px;
-    font-size: 18px;
+    overflow: hidden;
 }
 
 #landing-page{
@@ -151,6 +106,8 @@ body{
     border: none;
     transition: .3s;
     cursor: pointer;
+    font-size: 20px;
+    color: white;
 }
 
 .buttons button:hover{
@@ -159,8 +116,7 @@ body{
 
 .buttons a{
     text-decoration: none;
-    color: white;
-    font-size: 20px;
+    
     font-family: var(--inter);
 }
 

@@ -1,0 +1,64 @@
+.header{
+    width: 100vw;
+    height: 6vh;
+    background: #0072BC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--inter);
+}
+
+.logo img{
+    width: 170px;
+}
+
+.search-navbar input{
+    width: 250px;
+    height: 40px;
+    background-image: url(imgs/search.png);
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    background-size: 30px;
+    padding-left: 2.5em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-family: var(--inter);
+}
+
+.search-navbar input:focus{
+    outline: 2px solid var(--azul-escuro);
+    box-shadow: 0px 5px 10px var(--azul-escuro);
+    
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.btn button{
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background: var(--azul-escuro);
+    gap: .3em;
+    border: none;
+    background-image: url(imgs/user.png);
+    background-repeat: no-repeat;
+    background-position-y: 10px;
+    background-position-x: 10px;
+    background-size: 20px;
+    cursor: pointer;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+    margin-right: -20px;
+    font-size: 18px;
+}
