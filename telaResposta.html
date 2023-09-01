@@ -41,8 +41,9 @@
             <div class="resposta">
                 <div class="content-resposta">
                     <div class="submit-resp">
-                        <textarea placeholder="Enviar resposta..."></textarea>
-                        <button>Enviar</button>
+                        <textarea placeholder="Enviar resposta..." id="input"></textarea>
+                        <button onclick="enviar()">Enviar</button>
+                        
                     </div>
                     <div class="resposta-pessoas">
                         <p>Respostas:</p>
@@ -50,9 +51,10 @@
                             <div class="perfil-resposta">
                                 <img src="imgs/Ellipse 2.png">
                                 <h1>Laura Mello de Sena</h1>
+                                
                             </div>
                             <div class="texto-resposta">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora fuga omnis amet ad eveniet officia minima labore eaque debitis illo dignissimos veniam, obcaecati iure saepe eius qui error. Soluta!</p>
+                                <p id="mensagem"></p>
                             </div>
                         </div>
                     </div>
@@ -149,5 +151,15 @@
         </div>
         </div>
     </section>
+    <script>
+
+        function enviar(){
+            let input = document.getElementById('input');
+            let mensagem = document.getElementById('mensagem');
+
+            mensagem.innerHTML = input.value;
+        }
+        
+    </script>
 </body>
 </html>
