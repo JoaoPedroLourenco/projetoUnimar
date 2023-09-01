@@ -1,16 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lalezar&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Lalezar&family=Montserrat:wght@300&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="stylerespostas.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="navbar.css">
     <title>Resposta | Unimar</title>
 </head>
+
 <body>
     <div class="header">
         <div class="logo">
@@ -20,146 +24,171 @@
             <input type="text" placeholder="Pesquisar...">
         </div>
         <div class="btn">
-           <button><a href="#">Login</a></button>
+            <button><a href="#">Login</a></button>
         </div>
     </div>
     <section>
         <div class="container">
             <div class="lado-esq">
-            <div class="pergunta">
-                <div class="content-pergunta">
-                    <div class="perfil">
-                        <img src="imgs/Ellipse 6.png">
-                        <p>João Pedro Lourenço</p>
-                    </div>
-                    <div class="question">
-                        <h3>Me ajudem!</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident quibusdam necessitatibus reprehenderit iusto, voluptas ex in molestias cum voluptatum nihil rem nostrum numquam tempora modi nobis fugit nesciunt ea!</p>
+                <div class="pergunta">
+                    <div class="content-pergunta">
+                        <div class="perfil">
+                            <img src="imgs/Ellipse 6.png">
+                            <p>João Pedro Lourenço</p>
+                        </div>
+                        <div class="question">
+                            <h3>Me ajudem!</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident quibusdam
+                                necessitatibus reprehenderit iusto, voluptas ex in molestias cum voluptatum nihil rem
+                                nostrum numquam tempora modi nobis fugit nesciunt ea!</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="resposta">
-                <div class="content-resposta">
-                    <div class="submit-resp">
-                        <textarea placeholder="Enviar resposta..." id="input"></textarea>
-                        <button onclick="enviar()">Enviar</button>
-                        
-                    </div>
-                    <div class="resposta-pessoas">
-                        <p>Respostas:</p>
-                        <div class="rspt">
-                            <div class="perfil-resposta">
-                                <img src="imgs/Ellipse 2.png">
-                                <h1>Laura Mello de Sena</h1>
-                                
-                            </div>
-                            <div class="texto-resposta">
-                                <p id="mensagem"></p>
-                            </div>
+                <div class="resposta">
+                    <div class="content-resposta">
+                        <div class="submit">
+                            <input id="inputTarefa" type="text" placeholder="Digite Sua Tarefa">
+                            <button onclick="addTarefa()" id="btn-add" class="add">Adicionar</button>
                         </div>
-                    </div>
-                    <div class="resposta-pessoas">
-                        <div class="rspt">
-                            <div class="perfil-resposta">
-                                <img src="imgs/Ellipse 3.png">
-                                <h1>André Azevedo</h1>
-                            </div>
-                            <div class="texto-resposta">
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed tempora fuga omnis amet ad eveniet officia minima labore eaque debitis illo dignissimos veniam, obcaecati iure saepe eius qui error. Soluta!</p>
-                            </div>
+                        <div class="resposta-pessoas">
+                            <p>Respostas:</p>
                         </div>
+                        <main class="print" id="areaLista">
+    
+                        </main>
+                      
+
                     </div>
-                    
+
                 </div>
-                
             </div>
-        </div>
-        <div class="lado-dir">
-            <div class="btn-pergunta">
-                <a href="enviarPergunta.html"><button>Fazer uma pergunta</button></a>
-            </div>
-            <div class="temas">
-                <p id="procurar-temas">Procurar por Temas</p>
-                <div class="scroll">
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Administração</p>
+            <div class="lado-dir">
+                <div class="btn-pergunta">
+                    <a href="enviarPergunta.html"><button>Fazer uma pergunta</button></a>
+                </div>
+                <div class="temas">
+                    <p id="procurar-temas">Procurar por Temas</p>
+                    <div class="scroll">
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Administração</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Ciência da Computação</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Ciência da Computação</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Des. e Análise de Sistemas</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Des. e Análise de Sistemas</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Medicina</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Medicina</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Biomedicina</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Biomedicina</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Medicina veterinária</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Medicina veterinária</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Arquitetura</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Arquitetura</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Engenharia civil</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Engenharia civil</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Engenharia Agronômica</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Engenharia Agronômica</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Direito</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Direito</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Educação Física</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Educação Física</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Enfermagem</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Enfermagem</p>
+                            </div>
                         </div>
-                    </div>
-                    <div class="card">
-                        <div class="card-content">
-                            <p>Fármacia</p>
+                        <div class="card">
+                            <div class="card-content">
+                                <p>Fármacia</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
         </div>
     </section>
     <script>
 
-        function enviar(){
+        function enviar() {
             let input = document.getElementById('input');
             let mensagem = document.getElementById('mensagem');
 
             mensagem.innerHTML = input.value;
         }
-        
+
+        let contador = 0;
+        let input = document.getElementById("inputTarefa");
+        let btnAdd = document.getElementById("btn-add");
+        let main = document.getElementById("areaLista");
+
+        function addTarefa() {
+            //PEGAR O VALOR DIGITADO NO INPUT
+            let valorInput = input.value;
+
+            //SE NÃO FOR VAZIO, NEM NULO, NEM INDEFINIDO
+            if (valorInput !== "" && valorInput !== null && valorInput !== undefined) {
+                ++contador;
+
+                let novoItem = `
+                <div id="${contador}" class="item">
+                    <div class="perfil-resposta" id="perfil">
+                        <img src="imgs/Ellipse 3.png"><h1>Anderson Matias</h1>
+                    </div>
+                    <div onclick="marcarTarefa(${contador})" class="item-nome">
+                        ${valorInput}
+                    </div>
+                </div>`;
+
+                //ADICIONAR NOVO ITEM NO MAIN
+                main.innerHTML += novoItem;
+
+                //ZERAR OS CAMPINHOS
+                input.value = "";
+                input.focus();
+            }
+        }
+
+        input.addEventListener("keyup", function (event) {
+            //SE TECLOU ENTER (13)
+            if (event.keyCode === 13) {
+                event.preventDefault();
+                btnAdd.click();
+            }
+        });
+
     </script>
 </body>
+
 </html>
